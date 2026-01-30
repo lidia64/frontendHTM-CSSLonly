@@ -109,8 +109,7 @@ article p { color: #223344; line-height: 1.8; }
 
 /* Footer  */
 .site-footer { background: linear-gradient(180deg,#f7fdfb,#eef8f7); padding: 24px 12px; border-top: 1px solid #e6f6f4; }
-.site-footer .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 24px;
-                            justify-content: space-between; align-items: flex-start; }
+.site-footer .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 24px; justify-content: space-between; align-items: flex-start; }
 .footer-col { flex: 1; min-width: 180px; }
 .footer-col h4 { margin: 0 0 8px 0; color: #08323b; }
 .footer-links { list-style: none; padding: 0; margin: 0; }
@@ -154,15 +153,13 @@ article p { color: #223344; line-height: 1.8; }
     margin-bottom: 8px; }
 
 /* Join form / membership form styling */
-main form { max-width: 760px; margin: 18px auto; background: #ffffff;
-           padding: 18px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+main form { max-width: 760px; margin: 18px auto; background: #ffffff; padding: 18px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 main fieldset { border: 1px solid #e6f6f4; padding: 16px; border-radius: 8px; margin-bottom: 14px; }
 main legend { padding: 0 8px; font-weight: 700; color: #08323b; }
 
 /* Labels and inputs */
 main label { display: block; margin-bottom: 6px; font-weight: 600; color: #0b5d73; }
-main input[type="text"], main input[type="ema il"], main input[type="tel"], 
-main input[type="date"], main input[type="number"], main select, main textarea, main input[list] {
+main input[type="text"], main input[type="ema il"], main input[type="tel"], main input[type="date"], main input[type="number"], main select, main textarea, main input[list] {
     width: 100%;
     padding: 10px 12px;
     border-radius: 6px;
@@ -233,10 +230,56 @@ h2 { margin-top: 8px; margin-bottom: 6px; }
 
 footer { padding: 6px; text-align: center; }
 
-@media (max-width: 420px) {
-    .media-preview { height: 100px; }
-    .pdf-object { height: 140px; }
-    nav ul { gap: 6px; }
+/* Responsive rules - tablets / small desktops */
+@media (max-width: 900px) {
+  header { padding: 8px; }
+  nav ul { justify-content: center; gap: 8px; }
+
+  /* Hero: stack columns and center content */
+  .hero { flex-direction: column; align-items: center; text-align: center; }
+  .hero-aside { margin-top: 12px; }
+
+  /* Media grid: slightly fewer columns, taller previews */
+  .media-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .media-preview { height: 160px; }
+  .pdf-object { height: 200px; }
+
+  /* Forms: reduce side paddings and keep inputs full width */
+  main form { padding: 12px; }
+  main fieldset { padding: 12px; }
+  main input[type="submit"] { padding: 12px; }
+
+  /* Contact layout: fallback to stacked columns if grid existed */
+  .contact-grid { grid-template-columns: 1fr; }
 }
 
+/* Responsive rules - phones */
+@media (max-width: 600px) {
+  /* Make the main container and header more compact */
+  body { padding: 6px; }
+  header h1 { font-size: 1.05rem; margin-bottom: 6px; }
+  nav ul { flex-direction: column; gap: 6px; align-items: center; }
+
+  /* Force single-column gallery */
+  .media-grid { grid-template-columns: 1fr; gap: 10px; }
+  .media-preview { height: 120px; }
+  .pdf-object { height: 150px; }
+
+  /* Media controls: keep controls usable on small screens */
+  .media-card audio, .media-card video { height: auto; }
+
+  /* Buttons expand to full width for easier tapping */
+  .media-actions { justify-content: stretch; }
+  .media-actions a { width: 48%; text-align: center; }
+
+  /* Forms: inputs and submit button full width */
+  main input[type="text"], main input[type="email"], main select, main textarea { font-size: 1rem; }
+  main input[type="submit"] { width: 100%; display: block; }
+}
+
+/* Large screens: allow slightly wider gallery cards */
+@media (min-width: 1100px) {
+  .media-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  main { max-width: 1200px; }
+}
 
