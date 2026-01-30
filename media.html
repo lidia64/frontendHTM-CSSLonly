@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="RP Tumba Tech Club media gallery">
+    <meta name="author" content="RP Tumba Tech Club">
+    <title>Gallery - RP Tumba Tech Club</title>
+    <base href="./">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Club Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Activities</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="form.html">Join Us</a></li>
+                <li><a href="media.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gallery</h2>
+        <p class="lead">Explore photos, audio, and video highlights from our club activities.</p>
+
+        <div class="media-grid">
+            <div class="media-card">
+                <h3>Community Outreach</h3>
+                <img class="media-preview" src="img/student.jpg" height="100px" width="auto" alt="Community outreach program">
+                <p class="media-meta">Members teaching digital literacy in the community.</p>
+                <div class="media-actions">
+                    <a class="download" href="img/student.jpg" download>Download</a>
+                    <a class="details" href="#">View details</a>
+                </div>
+            </div>
+
+            <div class="media-card">
+                <h3>Guest Lecture (Audio)</h3>
+                <p class="media-meta">Short clip from our guest lecture.</p>
+                <audio controls>
+                    <source src="img/How to Start an Awesome Club.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="media-actions">
+                    <a class="download" href="img/How to Start an Awesome Club.mp3" download>Download</a>
+                    <a class="details" href="#">Transcript</a>
+                </div>
+            </div>
+
+            <div class="media-card">
+                <h3>Promo Video</h3>
+                <p class="media-meta">Highlights from our robotics lab session.</p>
+                <video controls>
+                    <source src="img/CBC Tech Club Promo Video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+                <div class="media-actions">
+                    <a class="download" href="img/CBC Tech Club Promo Video.mp4" download>Download</a>
+                    <a class="details" href="#">Watch on full page</a>
+                </div>
+            </div>
+
+            <div class="media-card">
+                <h3>Workshop Guide (PDF)</h3>
+                <p class="media-meta">Build a website using HTML only — sample workshop material.</p>
+                <object class="pdf-object" data="img/Build a website using HTML Only.pdf" type="application/pdf">
+                    <embed src="img/Build a website using HTML Only.pdf" type="application/pdf">
+                </object>
+                <div class="media-actions">
+                    <a class="download" href="img/Build a website using HTML Only.pdf" download>Download</a>
+                    <a class="details" href="#">Open in new tab</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 RP Tumba Tech Club</small></p>
+    </footer>
+</body>
+</html>
