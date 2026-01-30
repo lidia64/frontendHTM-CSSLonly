@@ -109,7 +109,8 @@ article p { color: #223344; line-height: 1.8; }
 
 /* Footer  */
 .site-footer { background: linear-gradient(180deg,#f7fdfb,#eef8f7); padding: 24px 12px; border-top: 1px solid #e6f6f4; }
-.site-footer .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 24px; justify-content: space-between; align-items: flex-start; }
+.site-footer .footer-inner { max-width: 1000px; margin: 0 auto; display: flex; gap: 24px;
+                            justify-content: space-between; align-items: flex-start; }
 .footer-col { flex: 1; min-width: 180px; }
 .footer-col h4 { margin: 0 0 8px 0; color: #08323b; }
 .footer-links { list-style: none; padding: 0; margin: 0; }
@@ -153,13 +154,15 @@ article p { color: #223344; line-height: 1.8; }
     margin-bottom: 8px; }
 
 /* Join form / membership form styling */
-main form { max-width: 760px; margin: 18px auto; background: #ffffff; padding: 18px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+main form { max-width: 760px; margin: 18px auto; background: #ffffff;
+           padding: 18px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 main fieldset { border: 1px solid #e6f6f4; padding: 16px; border-radius: 8px; margin-bottom: 14px; }
 main legend { padding: 0 8px; font-weight: 700; color: #08323b; }
 
 /* Labels and inputs */
 main label { display: block; margin-bottom: 6px; font-weight: 600; color: #0b5d73; }
-main input[type="text"], main input[type="ema il"], main input[type="tel"], main input[type="date"], main input[type="number"], main select, main textarea, main input[list] {
+main input[type="text"], main input[type="ema il"], main input[type="tel"], 
+main input[type="date"], main input[type="number"], main select, main textarea, main input[list] {
     width: 100%;
     padding: 10px 12px;
     border-radius: 6px;
@@ -235,4 +238,5 @@ footer { padding: 6px; text-align: center; }
     .pdf-object { height: 140px; }
     nav ul { gap: 6px; }
 }
+
 
