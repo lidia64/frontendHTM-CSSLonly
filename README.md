@@ -2,7 +2,7 @@
 
 This repository contains a small, static multi-page website for the RP Tumba Tech Club. The site is built using plain HTML and a single external CSS file — no JavaScript or build tools are required.
 
-## What’s included
+# What’s included
 
 - `index.html` — Home page
 - `about.html` — About the club
